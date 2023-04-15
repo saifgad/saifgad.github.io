@@ -1,0 +1,101 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Lato', sans-serif;
+    width: auto;
+
+}
+header{
+    background: rgba(20, 5, 4, .3);
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+    
+}
+.logo img{
+    width: 72px;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+.nav ul a{
+    text-decoration: none;
+    color: black;
+}
+.icon{
+    display: flex;
+    width: 30px;
+    flex-wrap: wrap;
+    transition: .8s;
+    justify-content: flex-end;
+}
+.icon span{
+    background: #000;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 100%;
+    transition: .8s;
+}
+.icon ul{
+list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  display: none;
+  margin-top: 25px;
+  z-index: 1;
+}
+.icon ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
+    transition: .6s;
+    display: block;
+    transition: .6s;
+    text-align: center;
+}
+.icon ul li a:hover{
+    padding-left: 25px;
+}
+.icon ul li{
+    margin-bottom: 5px;
+    transition: .6s;
+}
+.icon ul li:not(:last-child){
+    border-bottom: 2px solid #ddd;
+}
+.icon:hover ul{
+    display: block;
+}
+@media(min-width:1025px){
+    
+    .icon{
+        display: none;
+        
+    }
+}
+@media(max-width:1024px){
+    .nav{
+        display: none;
+        
+    }
+    .nav-bar{
+        margin: 0 35px;
+    }
+}
